@@ -4,7 +4,7 @@ import time
 
 # 创建机器人对象，初始化机器人连接
 ep_robot = robot.Robot()
-ep_robot.initialize(conn_type="sta", sn="3JKDH5D001****")
+ep_robot.initialize(conn_type="sta", sn="3JKDH5S00182J2")
 
 # 创建 led 对象
 ep_led = led.Led(ep_robot)
