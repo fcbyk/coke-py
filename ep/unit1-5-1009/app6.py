@@ -9,31 +9,49 @@ from sn import epsn
 ep = robot.Robot()
 ep.initialize(conn_type="sta", sn=epsn)
 
-# 产生随机数
-r = random.randint(0,255)
-g = random.randint(0,255)
-b = random.randint(0,255)
-print(r,g,b)
-
-
 # 每次发出声音时，发出不一样的灯光
 epled = led.Led(ep)
-epled.set_led(comp="all", r=r, g=g, b=b, effect="on")
+
+epled.set_led(comp="all",
+              r=random.randint(0,255),
+              g=random.randint(0,255),
+              b=random.randint(0,255),
+              effect="on")
 ep.play_sound(robot.SOUND_ID_SHOOT).wait_for_completed()
 
-epled.set_led(comp="all", r=r, g=g, b=b, effect="on")
+epled.set_led(comp="all",
+              r=random.randint(0,255),
+              g=random.randint(0,255),
+              b=random.randint(0,255),
+              effect="on")
 ep.play_sound(robot.SOUND_ID_ATTACK).wait_for_completed()
 
-epled.set_led(comp="all", r=r, g=g, b=b, effect="on")
+epled.set_led(comp="all",
+              r=random.randint(0,255),
+              g=random.randint(0,255),
+              b=random.randint(0,255),
+              effect="on")
 ep.play_sound(robot.SOUND_ID_SCANNING).wait_for_completed()
 
-epled.set_led(comp="all", r=r, g=g, b=b, effect="on")
+epled.set_led(comp="all",
+              r=random.randint(0,255),
+              g=random.randint(0,255),
+              b=random.randint(0,255),
+              effect="on")
 ep.play_sound(robot.SOUND_ID_RECOGNIZED).wait_for_completed()
 
-epled.set_led(comp="all", r=r, g=g, b=b, effect="on")
+epled.set_led(comp="all",
+              r=random.randint(0,255),
+              g=random.randint(0,255),
+              b=random.randint(0,255),
+              effect="on")
 ep.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
 
-epled.set_led(comp="all", r=r, g=g, b=b, effect="on")
+epled.set_led(comp="all",
+              r=random.randint(0,255),
+              g=random.randint(0,255),
+              b=random.randint(0,255),
+              effect="on")
 ep.play_sound(robot.SOUND_ID_COUNT_DOWN).wait_for_completed()
 
 # 关闭连接
