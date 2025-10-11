@@ -16,16 +16,6 @@ export default defineConfig({
 
     outline: [2, 3],
 
-    nav: [
-      {
-        text: '课堂代码',
-        items: [
-          { text: 'GitHub', link: 'https://github.com/fcbyk/coke-cc' },
-          { text: 'Gitee', link: 'https://gitee.com/fcbyk/coke-cc' },
-        ]
-      }
-    ],
-
     sidebar,
 
     darkModeSwitchLabel: "夜间模式",
