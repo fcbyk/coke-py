@@ -6,6 +6,8 @@ export default [
             {text: "02 初识Python",link:"/qa/02"},
             {text: "03 变量",link:"/qa/03"},
             {text: "04 字符串",link:"/qa/04"},
+            {text: "05 物品交换",link:"/qa/05"},
+            {text: "06 机器人的平移运动",link:"/qa/06"},
         ]
     },
     {
