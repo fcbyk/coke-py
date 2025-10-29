@@ -7,7 +7,6 @@
 }
 
 .markdown-content h1 {
-    color: #1a2a6c;
     text-align: center;
     margin: 30px 0;
     padding: 20px;
