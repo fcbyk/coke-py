@@ -4,6 +4,7 @@ import type { EnhanceAppContext } from 'vitepress'
 import { CCollapse, CBadge, CCollapseGroup } from '@fcbyk/vue-ui'
 import CokeUI from '@fcbyk/vue-ui'
 import '@fcbyk/vue-ui/style.css'
+import './style.css'
 
 
 export default {
